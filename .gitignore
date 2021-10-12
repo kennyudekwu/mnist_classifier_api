@@ -1,0 +1,16 @@
+# created by virtualenv automatically
+**/bin
+out/
+target/
+*.o
+*.pyc
+*.class
+etc/
+Lib/
+.vscode/
+*.cfg
+Scripts/
+share/
+
+
+
