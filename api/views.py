@@ -48,7 +48,7 @@ def result(request):
     """
     Return inference
     """
-    print(request.data["image"])
+    # print(request.data["image"])
 
     '''
     Checking for request with encoded data by decoding and comparing the decoded value to its
