@@ -58,10 +58,12 @@ def result(request):
     '''
     try:
         _format, str_test_img = request.data["image"].split(';base64,')
-        # Returns a value if the data is encoded
+
         decoded_file_test = base64.b64decode(str_test_img)
+        # Returns a value if the data is encoded
         # in the right format (base64) else throws
         # an exception
+
         img_file = to_internal_value(request.data["image"])
     except Exception:
         if request.FILES["image"]:
