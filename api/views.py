@@ -108,7 +108,7 @@ def result(request):
         # print(path.exists())
         # relative_path = os.path.relpath(model_path)
         # print(relative_path)
-        with open('.\models\model.pckl', 'rb') as f:
+        with open('./models/model.pckl', 'rb') as f:
             pred = pickle.load(f)
 
         ans = pred.make_predictions(ready)
