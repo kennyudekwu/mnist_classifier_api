@@ -103,7 +103,6 @@ def result(request):
 
     try:
         # model_path = './digits/model/model.pckl'
-
         # path = Path(model_path)
         # print(path.exists())
         # relative_path = os.path.relpath(model_path)
