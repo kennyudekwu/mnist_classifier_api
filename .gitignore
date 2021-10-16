@@ -11,6 +11,6 @@ Lib/
 *.cfg
 Scripts/
 share/
-
+.env
 
 
