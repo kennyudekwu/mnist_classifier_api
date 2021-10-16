@@ -122,6 +122,7 @@ def result(request):
         # plt.imshow(resized_shape, cmap='Greys')
         # plt.show()
 
-    except:
+    except Exception as e:
         print('Failed to classify')
+        print(e)
         return Response({'error': 'Something has gone wrong. Please check file type'}, status=status.HTTP_400_BAD_REQUEST)
