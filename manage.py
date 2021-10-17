@@ -2,7 +2,8 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-from models.mnist_classifier_scratch import Classify
+# from models.mnist_classifier_scratch import Classify
+from django.conf import settings
 
 
 def main():

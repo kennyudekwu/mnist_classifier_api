@@ -2,6 +2,13 @@ import django_heroku
 import environ
 import os
 from pathlib import Path
+from models.mnist_classifier_scratch import Classify
+
+# Whichever __main__ file is being referenced, an attribute (a class in this case Classify)
+# will be created in the __main__ file
+
+import __main__
+__main__.Classify = Classify
 
 # Initialise environment variables
 env = environ.Env()

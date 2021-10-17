@@ -1,5 +1,6 @@
 import cv2 as cv
 from django.shortcuts import render
+from django.conf import settings
 from django.core.files.storage import default_storage
 from keras.preprocessing.image import img_to_array
 from keras.preprocessing import image
@@ -13,6 +14,7 @@ import os
 import base64
 import uuid
 from django.core.files.base import ContentFile
+
 
 if os.name == 'nt':
     temp = pathlib.PosixPath
